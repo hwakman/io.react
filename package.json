@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "next --p=3000"
+    "start": "next --p=3000",
+    "build": "next build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://hwakman.github.io/io.react/",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,6 +22,7 @@
     "next": "^7.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-script": "^2.0.5",
     "reactstrap": "^6.5.0"
   }
 }
